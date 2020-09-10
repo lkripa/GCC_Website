@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Preparing the next generation of female leaders and
+  tech entrepreneurs">
+  <meta name="keywords" content="education, girls, coding, programming, empowerment,
+  women, impact, technology, leadership, Switzerland, switzerland">
+  <meta content="girlscancode.ch" property="og:url">
+  <meta content="non_profit" property="og:type">
+  <meta content="Girls Can Code Switzerland" property="og:title">
+  <meta content="Coding Labs for Girls" property="og:description">
+
+  <!--  Link Logo and Stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="img/icons_website/8_2.png" type="image/png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <!--  Import Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Girls Can Code</title>
+
+</head>
+
+<body>
+<!-- IMPORT SCRIPTS -->
+<script src="scripts.js"></script>
+
+<!-- NAVIGATION BAR (on top) -->
+<!--The bar will have no background and during the first scroll,
+    the bar will become a white bar.-->
+<!--Each link will link to the correct section in the website-->
+<div class="w3-top">
+  <div class="w3-container w3-white" style="overflow: visible;" id="myNavbar">
+    <div class="w3-col m3 w3-white">
+      <a href="#home" class="w3-bar-item w3-button w3-left w3-hide-small" style="margin-right:auto">
+      <img src="img/Logo_black.png" height="80"></a>
+    </div>
+    <div class="w3-col m9 w3-white">
+      <div class="w3-row" style="display:flex; flex:1;
+        justify-content: flex-end; overflow: visible;">
+        <a href="#home" class="w3-bar-item w3-button w3-hide-large w3-hide-medium"
+           style="margin-right: auto">
+          <img src="img/Logo_black.png" height="60">
+        </a>
+        <div class="w3-dropdown-hover w3-white" style="padding-right: 10px">
+          <button class="w3-bar-item w3-button" id="languageButton">
+            EN
+          </button><i class="fa fa-caret-down" style="padding-top: 10px"></i>
+          <div id="language" class="w3-dropdown-content w3-bar-block w3-border"
+          style="position: absolute; top: 30px;">
+            <button onclick="toggleLanguage('.en'); swap('EN')" class="w3-bar-item w3-button" id="EN">
+              EN</button>
+            <button onclick="toggleLanguage('.de'); swap('DE')" class="w3-bar-item w3-button" id="DE">
+              DE</button>
+            <button onclick="toggleLanguage('.fr'); swap('FR')" class="w3-bar-item w3-button" id="FR">
+              FR</button>
+<!--            <button onclick="toggleLanguage('.it'); swap('IT')" class="w3-bar-item w3-button" id="IT">-->
+<!--              IT</button>-->
+          </div>
+        </div>
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-xlarge"
+           href="javascript:void(0);"
+           onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="w3-bar w3-white" style="display:flex; flex:1;
+        justify-content: flex-end; overflow: visible;">
+        <a href="#home" class="w3-bar-item w3-button w3-hide-small">
+          <i class="fa fa-home"></i> HOME </a>
+        <a href="en/aboutus" class="w3-bar-item w3-button w3-hide-small" >
+          <i class="fa fa-user"></i> ABOUT </a>
+        <a href="#newsfeed" class="w3-bar-item w3-button w3-hide-small">
+          <i class="fa fa-newspaper-o"></i> NEWSFEED </a>
+        <div class="w3-dropdown-hover">
+          <a href="en/joinus" class="w3-bar-item w3-button w3-hide-small">
+            <i class="fa fa-th"></i> JOIN US
+          </a>
+          <div class="w3-dropdown-content w3-bar-block w3-border" style="position: absolute;
+            top: 72px;">
+            <a href="en/discoverylab" class="w3-bar-item w3-button">Discovery Lab</a>
+            <a href="en/techlab" class="w3-bar-item w3-button">Tech Lab</a>
+            <a href="en/impactlab" class="w3-bar-item w3-button">Impact Lab</a>
+          </div>
+        </div>
+        <a href="en/supportus" class="w3-bar-item w3-button w3-hide-small">
+          <i class="fa fa-globe"></i> SUPPORT US </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small" style="justify-content: flex-end">
+          <i class="fa fa-envelope"></i> CONTACT </a>
+      </div>
+    </div>
+    <!-- Navbar on SMALL screens -->
+    <div id="navDemo" class="w3-bar-block w3-opacity w3-hide
+      w3-white w3-hide-large w3-hide-medium w3-right">
+      <a href="en/aboutus" class="w3-bar-item w3-button"
+         onclick="toggleFunction()"> ABOUT </a>
+      <a href="en/joinus" class="w3-bar-item w3-button"
+         onclick="toggleFunction()"> JOIN US </a>
+      <a href="en/supportus" class="w3-bar-item w3-button"
+         onclick="toggleFunction()"> SUPPORT US </a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT </a>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN Section -->
+<div class="w3-container w3-center w3-padding-64" id="home">
+  <img src="img/icons_website/WG_5.png" class ="w3-image w3-padding-64" style="width:70%">
+</div>
+
+<!-- OUR LOGO Section -->
+  <div class="w3-display-container" style="background-color:#415164" id="logo">
+    <img src="img/GCC_lci.png" class="w3-image">
+    <h5 class="w3-center w3-wide w3-hide-small" style="color: #f4b8b7; padding-bottom: 15px">
+      < Preparing the next generation of female leaders and tech entrepreneurs />
+    </h5>
+  </div>
+
+<!-- WHAT WE DO Section -->
+<div class="w3-container w3-center w3-padding-64" id="whatwedo">
+  <h1 class="w3-padding-32 w3-med-wide"><b>What We Do</b></h1>
+  <div class="w3-row w3-center w3-padding-32">
+<!--    FIRST COL -->
+    <div class="w3-col m4 w3-center">
+      <a href="en/joinus/index.html" class="w3-hover-opacity">
+        <img src="img/icons_website/2.png" class ="w3-image w3-padding-32" style="height:250px">
+        <div class="w3-row w3-padding-32">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Educate</b></h4>
+        </div>
+      </a>
+    </div>
+<!--    SECOND COL -->
+    <div class="w3-col m4 w3-center">
+      <a href="en/joinus/index.html" class="w3-hover-opacity">
+        <img src="img/icons_website/1.png" class ="w3-image w3-padding-32" style="height:250px">
+        <div class="w3-row w3-padding-32">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Empower</b></h4>
+        </div>
+      </a>
+    </div>
+<!--    THIRD COL -->
+    <div class="w3-col m4 w3-center">
+      <a href="en/joinus/index.html" class="w3-hover-opacity">
+        <img src="img/icons_website/3.png" class ="w3-image w3-padding-32" style="height:250px">
+        <div class="w3-row w3-padding-32">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Impact</b></h4>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- MISSION Section -->
+<div class="w3-container w3-animate-opacity w3-padding-32" style="background-color:#415164" id="mission">
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-small">
+      <img src="img/lara.jpg" class="w3-image" style="width:100%">
+    </div>
+    <div class="w3-col m6 w3-center w3-padding-16">
+      <h1 class="w3-center w3-padding-32 w3-med-wide" style="color: #f4b8b7">
+        <b>Our Mission</b>
+      </h1>
+      <img src="img/decor/zag_pink.png" height="15">
+<!--      EN-->
+      <h5 class="w3-text-white en padding-mission">
+        Girls Can Code mission is to provide nurturing and supporting environment where
+        girls can
+        <span class="w3-xlarge font-pink"> learn </span>
+        about computer science, programming languages, technologies and
+        skills for which demand is increasing exponentially.
+        Our approach enables girls to
+        <span  class="w3-xlarge font-pink">collaborate</span>
+        with university students and industry professionals
+        to create and grow with the power of
+        <span  class="w3-xlarge font-pink">technology</span>.
+      </h5>
+<!--      DE-->
+      <h5 class="w3-text-white de padding-mission">
+        Die Mission von Girls Can Code besteht darin,
+        eine nährende und unterstützende Umgebung zu schaffen, in der
+        Mädchen können
+        <span class="w3-xlarge font-pink"> lernen </span>
+        über Informatik, Programmiersprachen, Technologien und
+        Fähigkeiten, für die die Nachfrage exponentiell steigt.
+        Unser Ansatz ermöglicht es Mädchen
+        <span class="w3-xlarge font-pink">Zusammenarbeiten</span>
+        mit Studierenden und Fachleuten aus der Industrie
+        zu schaffen und zu wachsen mit der Kraft von
+        <span class="w3-xlarge font-pink">Technik</span>.
+      </h5>
+
+      <!--      FR-->
+      <h5 class="w3-text-white fr padding-mission">
+        La mission de Girls Can Code est d'offrir un environnement stimulant et favorable où
+        les filles peuvent
+        <span class="w3-xlarge font-pink"> apprendre </span>
+        sur l'informatique, les langages de programmation, les technologies et
+        des compétences pour lesquelles la demande augmente de manière exponentielle.
+        Notre approche permet aux filles de
+        <span class="w3-xlarge font-pink">collaborer</span>
+        avec les étudiants et les professionnels de l'industrie
+        pour créer et grandir avec le pouvoir de
+        <span class="w3-xlarge font-pink">technologie</span>.
+      </h5>
+
+      <!--      IT-->
+      <h5 class="w3-text-white it padding-mission">
+        La missione di Girls Can Code è quella di fornire un ambiente di
+        supporto e nutrimento dove
+        le ragazze possono
+        <span class="w3-xlarge font-pink"> imparare </span>
+        sull'informatica, i linguaggi di programmazione, le tecnologie e
+        competenze per le quali la domanda è in crescita esponenziale.
+        Il nostro approccio permette alle ragazze di
+        <span class="w3-xlarge font-pink">collaborato</span>
+        con gli studenti e i professionisti del settore
+        per creare e crescere con il potere di
+        <span class="w3-xlarge font-pink">tecnologia</span>.
+      </h5>
+      <img src="img/decor/zag_pink.png" height="15" id="newsfeed">
+    </div>
+  </div>
+</div>
+
+
+<!-- NEWSFEED Section -->
+<div class="w3-container w3-center padding-newsfeed-container">
+  <h1 class="w3-med-wide w3-center w3-padding-32" ><b>NEWSFEED</b></h1>
+<!--  <div class="col-container">-->
+<!--&lt;!&ndash;    FIRST COL (LAUNCH PARTY)&ndash;&gt;-->
+<!--    <div class="col m4 w3-center w3-padding-64" style="position: relative;">-->
+<!--      <div class="w3-row">-->
+<!--        <a href="https://girls-can-do-anything-launch-party.eventbrite.ch" target="_blank"-->
+<!--           class="w3-hover-opacity w3-large"-->
+<!--           style="text-decoration: none">-->
+<!--          <img src="img/icons_website/4.png" class ="w3-image w3-padding-16" style="width:20%">-->
+<!--          <h4><b>Launch Party</b></h4>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="w3-row">-->
+<!--        <p class="w3-padding-large">-->
+<!--          Celebrating - Character, Intelligence, Strength, Purpose and Impact.-->
+<!--          Discover, Play & Party with technology.-->
+
+<!--        </p>-->
+<!--      </div>-->
+<!--      <div class="w3-row" style=" display: flex; justify-content: center;-->
+<!--        align-items: center; ">-->
+<!--        <div style="position:absolute; bottom: 0px">-->
+<!--        <a href="https://girls-can-do-anything-launch-party.eventbrite.ch" target="_blank"-->
+<!--           class="w3-hover-opacity w3-large w3-button w3-grey-button"-->
+<!--           id="eventbrite-widget-modal-trigger-117315320281">-->
+<!--          Request an Invitation-->
+<!--        </a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--&lt;!&ndash;    SECOND COL (SUPPORT US)&ndash;&gt;-->
+<!--    <div class="col w3-center w3-padding-64">-->
+<!--      <div class="w3-row">-->
+<!--        <a href="en/supportus" class="w3-hover-opacity" style="text-decoration: none">-->
+<!--          <img src="img/icons_website/5.png" class ="w3-image w3-padding-32" style="width:50%">-->
+<!--          <h4 style="padding-top: 10px"><b>Support Us</b></h4>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="w3-row">-->
+<!--        <p class="w3-padding-large"> Help close the gender gap which-->
+<!--          has been evolving in our society for generations.-->
+<!--          We need your support to empower and inspire girls to become the next generation of-->
+<!--          global leaders and entrepreneurs.-->
+<!--        </p>-->
+<!--      </div>-->
+<!--      <div class="w3-row" style=" display: flex; justify-content: center;-->
+<!--        align-items: center; ">-->
+<!--        <div style="position:absolute; bottom: 0px">-->
+<!--          <a href="en/supportus" class="w3-hover-opacity w3-large w3-button w3-grey-button">-->
+<!--          Contact Us-->
+<!--        </a>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+
+<!--&lt;!&ndash;    THIRD COL (NOMINATE PROJECT)&ndash;&gt;-->
+<!--    <div class="col m4 w3-center w3-padding-64">-->
+<!--      <div class="w3-row">-->
+<!--        <a href="en/etc/comingsoon.html" class="w3-hover-opacity" style="text-decoration: none">-->
+<!--          <img src="img/icons_website/6.png" class ="w3-image w3-padding-16" style="width:30%">-->
+<!--          <h4><b>Nominate Impact Project</b></h4>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="w3-row">-->
+<!--        <p class="w3-padding-large"> Let us help! Applying newly acquired skills to real life-->
+<!--          projects is the best way to build confidence and empower creativity. -->
+<!--          Nominate a project and let our girls help you realize it!-->
+<!--        </p>-->
+<!--      </div>-->
+<!--      <div class="w3-row" style="display: flex; justify-content: center;-->
+<!--        align-items: center; ">-->
+<!--        <div style="position:absolute; bottom: 0px">-->
+<!--        <a href="en/etc/comingsoon.html" class="w3-hover-opacity w3-large w3-button w3-grey-button">-->
+<!--          Nominate Project-->
+<!--        </a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+  <div class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+
+<!--    Launch Party -->
+    <li class="carousel__slide" tabindex="0">
+      <h2 id="carousel__LaunchParty" style="padding-top: 170pt; margin-top: -170pt;"></h2>
+      <div class="carousel__snapper"></div>
+      <div class="w3-row">
+        <a href="https://girls-can-do-anything-launch-party.eventbrite.ch" target="_blank"
+           class="w3-hover-opacity w3-large"
+           style="text-decoration: none">
+          <img src="img/icons_website/4.png" class ="w3-image w3-padding-16" style="width:18%">
+          <h4 class=""><b>Launch Party</b></h4>
+        </a>
+      </div>
+      <div class="w3-row">
+        <h6 class="padding-newsfeed">
+          Celebrating - Character, Intelligence, Strength, Purpose and Impact.
+          Discover, Play & Party with technology.
+        </h6>
+      </div>
+      <div class="w3-row" style="display: flex; justify-content: center;
+        align-items: center;">
+        <div style="position:absolute; bottom: 10px">
+          <a href="https://girls-can-do-anything-launch-party.eventbrite.ch" target="_blank"
+             class="w3-hover-opacity w3-large w3-button w3-grey-button"
+             id="eventbrite-widget-modal-trigger-117315320281">
+            Request an Invitation
+          </a>
+        </div>
+      </div>
+    </li>
+
+<!--    Support Us-->
+    <li class="carousel__slide" tabindex="0">
+      <h2 id="carousel__SupportUs" style="padding-top: 170pt; margin-top: -170pt;"></h2>
+      <div class="carousel__snapper"></div>
+      <div class="w3-row">
+        <a href="en/supportus" class="w3-hover-opacity" style="text-decoration: none">
+          <img src="img/icons_website/5.png" class ="w3-image w3-padding-32" style="width:47%">
+          <h4 class="w3-text-white" style="padding-top: 5px"><b>Support Us</b></h4>
+        </a>
+      </div>
+      <div class="w3-row">
+        <h6 class="padding-newsfeed w3-text-white"> Help close the gender gap which
+          has been evolving in our society for generations.
+          We need your support to empower and inspire girls to become the next generation of
+          global leaders and entrepreneurs.
+        </h6>
+      </div>
+      <div class="w3-row" style=" display: flex; justify-content: center;
+        align-items: center;">
+        <div style="position:absolute; bottom: 10px">
+          <a href="en/supportus" class="w3-hover-opacity w3-large w3-button w3-grey-button">
+          Contact Us
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <!--    Nominate Impact Project-->
+    <li class="carousel__slide" tabindex="0">
+      <h2 id="carousel__NominateProject" style="padding-top: 170pt; margin-top: -170pt;"></h2>
+      <div class="carousel__snapper"></div>
+      <div class="w3-row">
+        <a href="en/etc/comingsoon.html" class="w3-hover-opacity" style="text-decoration: none">
+          <img src="img/icons_website/6.png" class ="w3-image w3-padding-16" style="width:25%">
+          <h4 class=""><b>Nominate Impact Project</b></h4>
+        </a>
+      </div>
+      <div class="w3-row">
+        <h6 class="padding-newsfeed"> Let us help! Applying newly acquired skills to real life
+          projects is the best way to build confidence and empower creativity. 
+          Nominate a project and let our girls help you realize it!
+        </h6>
+      </div>
+      <div class="w3-row" style="display: flex; justify-content: center;
+        align-items: center;">
+        <div style="position:absolute; bottom: 10px">
+        <a href="en/etc/comingsoon.html" class="w3-hover-opacity w3-large w3-button w3-grey-button">
+          Nominate Project
+        </a>
+        </div>
+      </div>
+    </li>
+
+    <!--    Sebastian's Video -->
+    <!--    class="carousel__slide" needed in iframe -->
+    <li class="carousel__slide" tabindex="0">
+      <h2 id="carousel__Sebastian" style="padding-top: 170pt; margin-top: -170pt;"></h2>
+      <div class="carousel__snapper"></div>
+      <iframe class="carousel__slide" width="560" height="315"
+              src="https://www.youtube-nocookie.com/embed/DQhYtsAG9hM"
+              frameborder="0" allow="accelerometer; autoplay;
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <h4 class="w3-text-white" style="padding-top: 16px"> Udacity x Girls Can Code </h4>
+      <h6 class="w3-text-white padding-newsfeed padding-newsfeed-videos"> Sebastian Thrun, co-founder of Udacity,
+          talks of his support and encouragement for Girls Can Code initiative
+          and the importance of empowering more women to lead the tech sector.
+      </h6>
+    </li>
+
+    <!--    Linda's Video -->
+    <!--    class="carousel__slide" needed in iframe -->
+    <li class="carousel__slide" tabindex="0">
+      <h2 id="carousel__Linda" style="padding-top: 170pt; margin-top: -170pt;"></h2>
+      <div class="carousel__snapper"></div>
+      <iframe class="carousel__slide"width="560" height="315"
+              src="https://www.youtube-nocookie.com/embed/ML_KT6xpPBk"
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+              picture-in-picture" allowfullscreen>
+      </iframe>
+      <h4 class="" style="padding-top: 16px"> Linda Rising </h4>
+      <h6 class="padding-newsfeed padding-newsfeed-videos">
+      </h6>
+    </li>
+
+    <!--   Timur's Video -->
+    <!--    class="carousel__slide" needed in iframe -->
+    <li class="carousel__slide" tabindex="0">
+      <h2 id="carousel__Timur" style="padding-top: 170pt; margin-top: -170pt;"></h2>
+      <div class="carousel__snapper"></div>
+      <iframe class="carousel__slide" width="560" height="315"
+              src="https://www.youtube-nocookie.com/embed/uQR8Hp6gMkA" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+      <h4 class="w3-text-white" style="padding-top: 16px"> Timur Perelmutov </h4>
+      <h6 class="w3-text-white padding-newsfeed padding-newsfeed-videos">
+      </h6>
+    </li>
+
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__LaunchParty"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__SupportUs"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__NominateProject"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__Sebastian"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__Linda"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__Timur"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</div>
+</div>
+
+
+<!-- Container (Founders Section) -->
+<!--<div class="w3-container w3-center w3-padding-32 w3-pale-red">-->
+<!--  <h2 class="w3-center">FOUNDERS</h2>-->
+<!--  <div class="w3-row w3-center">-->
+<!--    <div class="w3-col m2">-->
+<!--      <p>1</p>-->
+<!--    </div>-->
+<!--    <div class="w3-col m2">-->
+<!--      <p>2</p>-->
+<!--    </div>-->
+<!--    <div class="w3-col m2">-->
+<!--      <p>3</p>-->
+<!--    </div>-->
+<!--    <div class="w3-col m2">-->
+<!--      <p>4</p>-->
+<!--    </div>-->
+<!--    <div class="w3-col m2">-->
+<!--      <p>5</p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!-- SPONSOR Section -->
+<div class="w3-container w3-center" id="sponsors">
+    <h1 class="w3-center w3-padding-32 w3-med-wide">
+        <b>Our Sponsors, Partners & Supporters</b>
+    </h1>
+  <img src="img/GCCPartnerLogos/GCCWebsitePartnerLogos.png" class="logos" style="">
+</div>
+
+<!-- GET INVOLVED Section -->
+<div class="w3-container w3-center w3-padding-64" style="background-color: #f4b8b7" id="contact">
+  <img src="img/icons_website/7.png" height="150" class="w3-padding-16">
+  <h1 class="w3-center w3-padding-16 w3-med-wide"><b>GET IN TOUCH</b></h1>
+  <h3 class="w3-center fa fa-envelope w3-xlarge w3-padding-16"><span style="font-family: Raleway">  Email</span></h3>
+  <br>
+  <a class="w3-hover-opacity w3-center w3-xlarge"
+     href="mailto:info@girlscancode.ch"
+     style="text-decoration: none; color: #415164 ; padding: 5px 0px">
+       info@girlscancode.ch </span>
+  </a>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-hover-opacity-off footer-pink" style="padding-top: 100px">
+  <a href="#home" class="w3-button w3-light-grey">
+    <i class="fa fa-arrow-up w3-margin-right"></i>To the top</span>
+  </a>
+  <br><br>
+
+  <div class="w3-xxlarge w3-section w3-text-dark-gray">
+    <a class="fa fa-facebook w3-hover-opacity w3-padding-small"
+       href="https://www.facebook.com/girlscancodeswitzerland/" target="_blank" style="text-decoration: none"></a>
+    <a class="fa fa-instagram w3-hover-opacity w3-padding-small"
+       href="https://www.instagram.com/girlscancodeswitzerland/" target="_blank" style="text-decoration: none"></a>
+    <a class="fa fa-twitter w3-hover-opacity w3-padding-small"
+       href="https://twitter.com/girlscancode20" target="_blank" style="text-decoration: none"></a>
+    <a class="fa fa-linkedin w3-hover-opacity w3-padding-small"
+       href="https://www.linkedin.com/company/girlscancode" target="_blank" style="text-decoration: none"></a>
+    <a class="fa fa-envelope w3-hover-opacity w3-padding-small"
+       href="mailto:info@girlscancode.ch"style="text-decoration: none"></a>
+  </div>
+  <a href="https://forms.gle/7oCVNAk6q8GWAawa8" target="_blank"
+     class="w3-padding-16 w3-bar-item w3-button w3-hide-small w3-center">
+      <i class="fa fa-newspaper-o"></i> Sign up for our NEWSLETTER</a>
+  <a href="GCC_TermsAndConditions.pdf" target="_blank"
+     class="w3-padding-16 w3-bar-item w3-button w3-hide-small w3-center">
+      <i class="fa fa-file"></i> T&C</a>
+  <p class="w3-padding-16"><span class="w3-text-dark-gray">Copyright © Girls Can Code 2020</span></p>
+</footer>
+<!--JOIN US FOOTER IS ALSO MANUAL-->
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '117315320281',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-117315320281',
+        onOrderComplete: exampleCallback
+    });
+</script>
+
+<!-- FIREBASE CONFIG-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAvtI-Lv62h_E3gMf2m6Wm5w-FgE16--9A",
+    authDomain: "girlscancode-de925.firebaseapp.com",
+    databaseURL: "https://girlscancode-de925.firebaseio.com",
+    projectId: "girlscancode-de925",
+    storageBucket: "girlscancode-de925.appspot.com",
+    messagingSenderId: "908316208672",
+    appId: "1:908316208672:web:4746893bece86496d4d645",
+    measurementId: "G-DPFBLX4H35"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<!-- Bootstrap JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

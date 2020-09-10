@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: GCC_TermsAndConditions.pdf
+Disallow: /en/etc/

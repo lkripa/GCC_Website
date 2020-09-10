@@ -1,0 +1,73 @@
+<div class="w3-top">
+  <div class="w3-container w3-white" style="overflow: visible;" id="myNavbar">
+    <div class="w3-col m2 w3-hide-small">
+      <a href="../../index.html" class="w3-bar-item w3-button">
+      <img src="../../img/Logo_black.png" height="80"></a>
+    </div>
+    <div class="w3-col m10 ">
+      <div class="w3-row" style="display:flex; flex:1;
+        justify-content: flex-end; overflow: visible;">
+        <a href="../../index.html" class="w3-bar-item w3-button w3-hide-large w3-hide-medium"
+           style="margin-right: auto">
+          <img src="../../img/Logo_black.png" height="60">
+        </a>
+        <div class="w3-dropdown-hover w3-white" style="padding-right: 10px">
+          <button class="w3-bar-item w3-button" id="languageButton">
+            EN
+          </button><i class="fa fa-caret-down" style="padding-top: 10px"></i>
+          <div id="language" class="w3-dropdown-content w3-bar-block w3-border" style="position: absolute;
+            top: 30px;">
+            <button onclick="toggleLanguage('.en'); swap('EN')" class="w3-bar-item w3-button" id="EN">
+              EN</button>
+            <button onclick="toggleLanguage('.de'); swap('DE')" class="w3-bar-item w3-button" id="DE">
+              DE</button>
+            <button onclick="toggleLanguage('.fr'); swap('FR')" class="w3-bar-item w3-button" id="FR">
+              FR</button>
+<!--            <button onclick="toggleLanguage('.it'); swap('IT')" class="w3-bar-item w3-button" id="IT">-->
+<!--              IT</button>-->
+          </div>
+        </div>
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-xlarge"
+           href="javascript:void(0);"
+           onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="w3-bar w3-white" style="display:flex; flex:1;
+        justify-content: flex-end; overflow: visible;">
+        <a href="../../index.html" class="w3-bar-item w3-button w3-hide-small">
+          <i class="fa fa-home"></i> HOME </a>
+        <a href="../aboutus" class="w3-bar-item w3-button w3-hide-small" >
+          <i class="fa fa-user"></i> ABOUT </a>
+        <a href="../../index.html#newsfeed" class="w3-bar-item w3-button w3-hide-small">
+          <i class="fa fa-newspaper-o"></i> NEWSFEED </a>
+        <div class="w3-dropdown-hover">
+          <a href="../joinus" class="w3-bar-item w3-button w3-hide-small">
+            <i class="fa fa-th"></i> JOIN US
+          </a>
+          <div class="w3-dropdown-content w3-bar-block w3-border" style="position: absolute;
+            top: 72px;">
+            <a href="../discoverylab" class="w3-bar-item w3-button">Discovery Lab</a>
+            <a href="../techlab" class="w3-bar-item w3-button">Tech Lab</a>
+            <a href="../impactlab" class="w3-bar-item w3-button">Impact Lab</a>
+          </div>
+        </div>
+        <a href="../supportus" class="w3-bar-item w3-button w3-hide-small">
+          <i class="fa fa-globe"></i> SUPPORT US </a>
+        <a href="../../index.html#contact" class="w3-bar-item w3-button w3-hide-small" style="justify-content: flex-end">
+          <i class="fa fa-envelope"></i> CONTACT </a>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar on SMALL screens -->
+  <div id="navDemo" class="w3-bar-block w3-opacity w3-hide
+    w3-white w3-hide-large w3-hide-medium w3-right">
+    <a href="en/aboutus" class="w3-bar-item w3-button"
+       onclick="toggleFunction()"> ABOUT </a>
+    <a href="en/joinus" class="w3-bar-item w3-button"
+       onclick="toggleFunction()"> JOIN US </a>
+    <a href="en/supportus" class="w3-bar-item w3-button"
+       onclick="toggleFunction()"> SUPPORT US </a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT </a>
+  </div>
+</div>
