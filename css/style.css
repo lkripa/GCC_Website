@@ -3,14 +3,14 @@
   font-family: LemonTuesday;
   src: url("../fonts/LemonTuesday/LemonTuesday.otf");
 }
-@font-face {
-  font-family: LeagueSpartan;
-  src: url("../fonts/league-spartan/LeagueSpartan-Bold.otf");
-}
-@font-face {
-  font-family: Ubuntu;
-  src: url("../fonts/ubuntu-font-family/Ubuntu-B.ttf");
-}
+/*@font-face {*/
+/*  font-family: LeagueSpartan;*/
+/*  src: url("../fonts/league-spartan/LeagueSpartan-Bold.otf");*/
+/*}*/
+/*@font-face {*/
+/*  font-family: Ubuntu;*/
+/*  src: url("../fonts/ubuntu-font-family/Ubuntu-B.ttf");*/
+/*}*/
 
 /* CLASSES */
 body,h1,h2,h3,h4,h5,h6 {
@@ -144,6 +144,10 @@ transform: translateY(-50%);
   padding-right: 40px;
   padding-bottom: 60px;
 }
+.video_navigation{
+  padding-top: 170pt;
+  margin-top: -170pt;
+}
 
  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
@@ -186,6 +190,11 @@ transform: translateY(-50%);
     padding-right: 120px;
     padding-bottom: 0px;
     padding-top: 0px;
+  }
+
+  .video_navigation{
+    padding-top: 135pt;
+    margin-top: -135pt;
   }
 
   .logos{
