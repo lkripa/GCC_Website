@@ -111,7 +111,17 @@ transform: translateY(-50%);
 }
 
 .logos{
-  max-width: 70%
+  max-width: 90%
+}
+
+/* LOGOS Container */
+.container__logos {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 175px 175px 175px 175px;
+  grid-template-rows: 175px 175px;
+  grid-gap: 2rem;
+  padding: 50px;
 }
 
 /* PADDING */
@@ -147,59 +157,6 @@ transform: translateY(-50%);
 .video_navigation{
   padding-top: 170pt;
   margin-top: -170pt;
-}
-
- /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1000px) {
-  .col-container {
-    display: block;
-    width: 100%;
-  }
-  .padding-TB-50 {
-    padding-top: 16px;
-    padding-bottom: 16px
-  }
-  .padding-goals {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .position-supportus-form {
-    position:relative;
-    padding-bottom: 40px;
-  }
-
-  .padding-labs {
-    padding-top: 100px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .padding-newsfeed {
-    padding: 16px 40px;
-  }
-
-  .padding-newsfeed-container{
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  /*padding-bottom: 60px;*/
-}
-  .padding-newsfeed-videos{
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-  }
-
-  .video_navigation{
-    padding-top: 135pt;
-    margin-top: -135pt;
-  }
-
-  .logos{
-  max-width: 100%
-  }
 }
 
 /*CAROUSEL*/
@@ -410,4 +367,80 @@ ol, li {
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, .1);
+}
+
+ /* Responsive layout - when the screen is less than 600px wide,
+ make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .col-container {
+    display: block;
+    width: 100%;
+  }
+  .padding-TB-50 {
+    padding-top: 16px;
+    padding-bottom: 16px
+  }
+  .padding-goals {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .position-supportus-form {
+    position:relative;
+    padding-bottom: 40px;
+  }
+
+  .padding-labs {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .padding-newsfeed {
+    padding: 16px 40px;
+  }
+
+  .padding-newsfeed-container{
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  /*padding-bottom: 60px;*/
+  }
+  .padding-newsfeed-videos{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  .video_navigation{
+    padding-top: 135pt;
+    margin-top: -135pt;
+  }
+
+  .logos{
+  max-width: 100%
+  }
+
+  .container__logos {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 125px 125px 125px;
+  grid-template-rows: 125px 125px 125px;
+  grid-gap: 2rem;
+  padding: 30px;
+  }
+
+/* end of mobile */
+}
+/* Smallest Grid Container Movement */
+@media screen and (max-width: 500px) {
+  .container__logos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 125px 125px;
+    grid-template-rows: 125px 125px 125px 125px;
+    grid-gap: 2rem;
+    padding: 30px;
+  }
 }
