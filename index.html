@@ -66,8 +66,8 @@
               DE</button>
             <button onclick="toggleLanguage('.fr'); swap('FR')" class="w3-bar-item w3-button" id="FR">
               FR</button>
-<!--            <button onclick="toggleLanguage('.it'); swap('IT')" class="w3-bar-item w3-button" id="IT">-->
-<!--              IT</button>-->
+            <button onclick="toggleLanguage('.it'); swap('IT')" class="w3-bar-item w3-button" id="IT">
+              IT</button>
           </div>
         </div>
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-xlarge"
@@ -78,39 +78,95 @@
       </div>
       <div class="w3-bar w3-white" style="display:flex; flex:1;
         justify-content: flex-end; overflow: visible;">
-        <a href="#home" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-home"></i> HOME </a>
-        <a href="en/aboutus" class="w3-bar-item w3-button w3-hide-small" >
-          <i class="fa fa-user"></i> ABOUT </a>
-        <a href="#newsfeed" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-newspaper-o"></i> NEWSFEED </a>
+        <a href="#home" class="w3-bar-item w3-button w3-hide-small all_caps">
+          <i class="fa fa-home"></i>
+          HOME
+        </a>
+        <a href="en/aboutus" class="w3-bar-item w3-button w3-hide-small all_caps" >
+          <span class="en"><i class="fa fa-user"></i> ABOUT </span>
+          <span class="de"><i class="fa fa-user"></i> ABOUT </span>
+          <span class="fr"><i class="fa fa-user"></i> ABOUT </span>
+          <span class="it"><i class="fa fa-user"></i> Informazioni </span>
+        </a>
+        <a href="#newsfeed" class="w3-bar-item w3-button w3-hide-small all_caps">
+          <span class="en"><i class="fa fa-newspaper-o"></i> NEWSFEED </span>
+          <span class="de "><i class="fa fa-newspaper-o"></i> NEWSFEED</span>
+          <span class="fr "><i class="fa fa-newspaper-o"></i> NEWSFEED</span>
+          <span class="it "><i class="fa fa-newspaper-o"></i> Notizie </span>
+        </a>
         <div class="w3-dropdown-hover">
-          <a href="en/joinus" class="w3-bar-item w3-button w3-hide-small">
-            <i class="fa fa-th"></i> JOIN US
+          <a href="en/joinus" class="w3-bar-item w3-button w3-hide-small all_caps">
+            <span class="en"><i class="fa fa-th"></i> JOIN US </span>
+            <span class="de"><i class="fa fa-th"></i> JOIN US </span>
+            <span class="fr"><i class="fa fa-th"></i> JOIN US </span>
+            <span class="it"><i class="fa fa-th"></i> Unisciti a noi </span>
           </a>
-          <div class="w3-dropdown-content w3-bar-block w3-border" style="position: absolute;
+          <div class="w3-dropdown-content w3-bar-block w3-border all_caps" style="position: absolute;
             top: 72px;">
-            <a href="en/discoverylab" class="w3-bar-item w3-button">Discovery Lab</a>
-            <a href="en/techlab" class="w3-bar-item w3-button">Tech Lab</a>
-            <a href="en/impactlab" class="w3-bar-item w3-button">Impact Lab</a>
+            <a href="en/discoverylab" class="w3-bar-item w3-button">
+              <span class="en">Discovery Lab</span>
+              <span class="de">Discovery Lab</span>
+              <span class="fr">Discovery Lab</span>
+              <span class="it">Laboratorio di Scoperta</span>
+            </a>
+            <a href="en/techlab" class="w3-bar-item w3-button">
+              <span class="en">Tech Lab</span>
+              <span class="de">Tech Lab</span>
+              <span class="fr">Tech Lab</span>
+              <span class="it">Laboratorio di Tecnologia</span>
+            </a>
+            <a href="en/impactlab" class="w3-bar-item w3-button">
+              <span class="en">Impact Lab</span>
+              <span class="de">Impact Lab</span>
+              <span class="fr">Impact Lab</span>
+              <span class="it">Laboratorio di Impatto</span>
+            </a>
           </div>
         </div>
-        <a href="en/supportus" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-globe"></i> SUPPORT US </a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small" style="justify-content: flex-end">
-          <i class="fa fa-envelope"></i> CONTACT </a>
+        <a href="en/supportus" class="w3-bar-item w3-button w3-hide-small all_caps">
+          <span class="en"><i class="fa fa-globe"></i> SUPPORT US </span>
+          <span class="de"><i class="fa fa-globe"></i> SUPPORT US </span>
+          <span class="fr"><i class="fa fa-globe"></i> SUPPORT US </span>
+          <span class="it"><i class="fa fa-globe"></i> Supportaci </span>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small all_caps" style="justify-content: flex-end">
+          <span class="en"><i class="fa fa-envelope"></i> CONTACT</span>
+          <span class="de"><i class="fa fa-envelope"></i> CONTACT</span>
+          <span class="fr"><i class="fa fa-envelope"></i> CONTACT</span>
+          <span class="it"><i class="fa fa-envelope"></i> Contatti</span>
+        </a>
       </div>
     </div>
     <!-- Navbar on SMALL screens -->
     <div id="navDemo" class="w3-bar-block w3-opacity w3-hide
-      w3-white w3-hide-large w3-hide-medium w3-right">
+      w3-white w3-hide-large w3-hide-medium w3-right all_caps">
       <a href="en/aboutus" class="w3-bar-item w3-button"
-         onclick="toggleFunction()"> ABOUT </a>
+         onclick="toggleFunction()">
+        <span class="en">ABOUT</span>
+        <span class="de">ABOUT</span>
+        <span class="fr">ABOUT</span>
+        <span class="it">Informazioni</span>
+      </a>
       <a href="en/joinus" class="w3-bar-item w3-button"
-         onclick="toggleFunction()"> JOIN US </a>
+         onclick="toggleFunction()">
+        <span class="en">JOIN US</span>
+        <span class="de">JOIN US</span>
+        <span class="fr">JOIN US</span>
+        <span class="it">Unisciti a noi</span>
+      </a>
       <a href="en/supportus" class="w3-bar-item w3-button"
-         onclick="toggleFunction()"> SUPPORT US </a>
-      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT </a>
+         onclick="toggleFunction()">
+        <span class="en">SUPPORT US</span>
+        <span class="de">SUPPORT US</span>
+        <span class="fr">SUPPORT US</span>
+        <span class="it">Supportaci</span>
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">
+        <span class="en">CONTACT</span>
+        <span class="de">CONTACT</span>
+        <span class="fr">CONTACT</span>
+        <span class="it">Contatti</span>
+      </a>
     </div>
   </div>
 </div>
@@ -123,21 +179,44 @@
 <!-- OUR LOGO Section -->
   <div class="w3-display-container" style="background-color:#415164" id="logo">
     <img src="img/GCC_lci.png" class="w3-image">
-    <h5 class="w3-center w3-wide w3-hide-small" style="color: #f4b8b7; padding-bottom: 15px">
+    <h5 class="w3-center w3-wide w3-hide-small en" style="color: #f4b8b7; padding-bottom: 15px">
       < Preparing the next generation of female leaders and tech entrepreneurs />
+    </h5>
+    <h5 class="w3-center w3-wide w3-hide-small de" style="color: #f4b8b7; padding-bottom: 15px">
+      < Preparing the next generation of female leaders and tech entrepreneurs />
+    </h5>
+    <h5 class="w3-center w3-wide w3-hide-small fr" style="color: #f4b8b7; padding-bottom: 15px">
+      < Preparing the next generation of female leaders and tech entrepreneurs />
+    </h5>
+    <h5 class="w3-center w3-wide w3-hide-small it" style="color: #f4b8b7; padding-bottom: 15px">
+      < Preparando la prossima generazione di donne leaders e di imprenditori in tecnologia />
     </h5>
   </div>
 
 <!-- WHAT WE DO Section -->
 <div class="w3-container w3-center w3-padding-64" id="whatwedo">
-  <h1 class="w3-padding-32 w3-med-wide"><b>What We Do</b></h1>
+  <h1 class="w3-padding-32 w3-med-wide en"><b>What We Do</b></h1>
+  <h1 class="w3-padding-32 w3-med-wide it"><b>Cosa facciamo</b></h1>
   <div class="w3-row w3-center w3-padding-32">
 <!--    FIRST COL -->
     <div class="w3-col m4 w3-center">
       <a href="en/joinus/index.html" class="w3-hover-opacity">
         <img src="img/icons_website/2.png" class ="w3-image w3-padding-32" style="height:250px">
-        <div class="w3-row w3-padding-32">
-          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Educate</b></h4>
+        <div class="w3-row w3-padding-32 en">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Educate</b>
+          </h4>
+        </div>
+        <div class="w3-row w3-padding-32 de">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Educate</b>
+          </h4>
+        </div>
+        <div class="w3-row w3-padding-32 fr">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Educate</b>
+          </h4>
+        </div>
+        <div class="w3-row w3-padding-32 it">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Educare</b>
+          </h4>
         </div>
       </a>
     </div>
@@ -145,8 +224,18 @@
     <div class="w3-col m4 w3-center">
       <a href="en/joinus/index.html" class="w3-hover-opacity">
         <img src="img/icons_website/1.png" class ="w3-image w3-padding-32" style="height:250px">
-        <div class="w3-row w3-padding-32">
+        <div class="w3-row w3-padding-32 en">
           <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Empower</b></h4>
+        </div>
+        <div class="w3-row w3-padding-32 de">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Empower</b></h4>
+        </div>
+        <div class="w3-row w3-padding-32 fr">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Empower</b></h4>
+        </div>
+        <div class="w3-row w3-padding-32 it">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Potenziare</b>
+          </h4>
         </div>
       </a>
     </div>
@@ -154,8 +243,18 @@
     <div class="w3-col m4 w3-center">
       <a href="en/joinus/index.html" class="w3-hover-opacity">
         <img src="img/icons_website/3.png" class ="w3-image w3-padding-32" style="height:250px">
-        <div class="w3-row w3-padding-32">
+        <div class="w3-row w3-padding-32 en">
           <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Impact</b></h4>
+        </div>
+        <div class="w3-row w3-padding-32 de">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Impact</b></h4>
+        </div>
+        <div class="w3-row w3-padding-32 fr">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Impact</b></h4>
+        </div>
+        <div class="w3-row w3-padding-32 it">
+          <h4 class="w3-button" style="color: #f9ad9a ;background-color: #415164"><b>Impatto</b>
+          </h4>
         </div>
       </a>
     </div>
@@ -171,8 +270,11 @@
       <img src="img/lara.jpg" class="w3-image" style="width:100%">
     </div>
     <div class="w3-col m6 w3-center w3-padding-16">
-      <h1 class="w3-center w3-padding-32 w3-med-wide" style="color: #f4b8b7">
-        <b>Our Mission</b>
+      <h1 class="w3-center w3-padding-32 w3-med-wide all_caps" style="color: #f4b8b7">
+        <b class="en">Our Mission</b>
+        <b class="de">Our Mission</b>
+        <b class="fr">Our Mission</b>
+        <b class="it">La nostra missione </b>
       </h1>
       <img src="img/decor/zag_pink.png" height="15">
 <!--      EN-->
@@ -219,17 +321,13 @@
 
       <!--      IT-->
       <h5 class="w3-text-white it padding-mission">
-        La missione di Girls Can Code è quella di fornire un ambiente di
-        supporto e nutrimento dove
-        le ragazze possono
-        <span class="w3-xlarge font-pink"> imparare </span>
-        sull'informatica, i linguaggi di programmazione, le tecnologie e
-        competenze per le quali la domanda è in crescita esponenziale.
-        Il nostro approccio permette alle ragazze di
-        <span class="w3-xlarge font-pink">collaborato</span>
-        con gli studenti e i professionisti del settore
-        per creare e crescere con il potere di
-        <span class="w3-xlarge font-pink">tecnologia</span>.
+        La nostra missione e' di fornire un ambiente stimolante e di supporto in cui le ragazze possono
+        <span class="w3-xlarge font-pink">imparare</span> l'informatica,
+        linguaggi di programmazione, tecnologie e abilità per cui la domanda sta crescendo esponenzialmente.
+        Il nostro approccio abilita le ragazze a
+        <span class="w3-xlarge font-pink">collaborare</span> con studenti universitari e
+        persone professionali nell'industria per creare e crescere
+        con la potenza della <span class="w3-xlarge font-pink">tecnologia</span>.
       </h5>
       <img src="img/decor/zag_pink.png" height="15">
     </div>
@@ -239,7 +337,12 @@
 
 <!-- NEWSFEED Section -->
 <div class="w3-container w3-center padding-newsfeed-container">
-  <h1 class="w3-med-wide w3-center w3-padding-32" ><b>NEWSFEED</b></h1>
+  <h1 class="w3-med-wide w3-center w3-padding-32 all_caps" >
+    <b class="en">NEWSFEED</b>
+    <b class="de">NEWSFEED</b>
+    <b class="fr">NEWSFEED</b>
+    <b class="it">NOTIZIE</b>
+  </h1>
   <h2 id="newsfeed" class="video_navigation"></h2>
 
   <div class="carousel" aria-label="Gallery">
@@ -254,13 +357,30 @@
            class="w3-hover-opacity w3-large"
            style="text-decoration: none">
           <img src="img/icons_website/4.png" class ="w3-image w3-padding-16" style="width:18%">
-          <h4 class=""><b>Launch Party</b></h4>
+          <h4>
+            <b class="en">Launch Party</b>
+            <b class="de">Launch Party</b>
+            <b class="fr">Launch Party</b>
+            <b class="it">Party di Lancio</b>
+          </h4>
         </a>
       </div>
       <div class="w3-row">
-        <h6 class="padding-newsfeed">
+        <h6 class="padding-newsfeed en">
           Celebrating - Character, Intelligence, Strength, Purpose and Impact.
           Discover, Play & Party with technology.
+        </h6>
+        <h6 class="padding-newsfeed de">
+          Celebrating - Character, Intelligence, Strength, Purpose and Impact.
+          Discover, Play & Party with technology.
+        </h6>
+        <h6 class="padding-newsfeed fr">
+          Celebrating - Character, Intelligence, Strength, Purpose and Impact.
+          Discover, Play & Party with technology.
+        </h6>
+        <h6 class="padding-newsfeed it">
+          Celebrando -Carattere, Intelligenza, Forza, Scopo e Impatto.
+          Scopri, Gioca & Festeggia con la tecnologia.
         </h6>
       </div>
       <div class="w3-row" style="display: flex; justify-content: center;
@@ -269,7 +389,10 @@
           <a href="https://girls-can-do-anything-launch-party.eventbrite.ch" target="_blank"
              class="w3-hover-opacity w3-large w3-button w3-grey-button"
              id="eventbrite-widget-modal-trigger-117315320281">
-            Request an Invitation
+            <span class="en"> Request an Invitation</span>
+            <span class="de"> Request an Invitation</span>
+            <span class="fr"> Request an Invitation</span>
+            <span class="it"> Richiedi un Invito</span>
           </a>
         </div>
       </div>
@@ -282,21 +405,46 @@
       <div class="w3-row">
         <a href="en/supportus" class="w3-hover-opacity" style="text-decoration: none">
           <img src="img/icons_website/5.png" class ="w3-image w3-padding-32" style="width:47%">
-          <h4 class="w3-text-white" style="padding-top: 5px"><b>Support Us</b></h4>
+          <h4 class="w3-text-white" style="padding-top: 5px">
+            <b class="en">Support Us</b>
+            <b class="de">Support Us</b>
+            <b class="fr">Support Us</b>
+            <b class="it">Supportaci</b>
+          </h4>
         </a>
       </div>
       <div class="w3-row">
-        <h6 class="padding-newsfeed w3-text-white"> Help close the gender gap which
+        <h6 class="padding-newsfeed w3-text-white en">
+          Help close the gender gap which
           has been evolving in our society for generations.
           We need your support to empower and inspire girls to become the next generation of
           global leaders and entrepreneurs.
+        </h6>
+        <h6 class="padding-newsfeed w3-text-white de">
+          Help close the gender gap which
+          has been evolving in our society for generations.
+          We need your support to empower and inspire girls to become the next generation of
+          global leaders and entrepreneurs.
+        </h6>
+        <h6 class="padding-newsfeed w3-text-white fr">
+          Help close the gender gap which
+          has been evolving in our society for generations.
+          We need your support to empower and inspire girls to become the next generation of
+          global leaders and entrepreneurs.
+        </h6>
+        <h6 class="padding-newsfeed w3-text-white it">
+          Aiutaci a compensare il divario di genere che e' andato crescendo nella nostra
+          societa' per generazioni. Abbiamo bisogno
+          del tuo supporto per potenziare e ispirare ragazze a diventare la prossima generazione
+          di leaders globali e di imprenditori.
         </h6>
       </div>
       <div class="w3-row" style=" display: flex; justify-content: center;
         align-items: center;">
         <div style="position:absolute; bottom: 10px">
           <a href="en/supportus" class="w3-hover-opacity w3-large w3-button w3-grey-button">
-          Contact Us
+            <span class="en">Contact Us</span>
+            <span class="it">Contattaci </span>
           </a>
         </div>
       </div>
@@ -433,7 +581,8 @@
 <!-- SPONSOR Section -->
 <div class="w3-container w3-center" id="sponsors">
     <h1 class="w3-center w3-padding-32 w3-med-wide">
-        <b>Our Sponsors, Partners & Supporters</b>
+        <b class="en">Our Sponsors, Partners & Supporters</b>
+        <b class="it">I nostri Finanziatori, Associati e Sostenitori</b>
     </h1>
   <div class="container__logos w3-center">
     <img src="img/GCCPartnerLogos/Logitech_RGB_black_M.png" class="logos" style="">
@@ -444,13 +593,19 @@
     <img src="img/GCCPartnerLogos/ethzlogo.png" class="logos" style="">
     <img src="img/GCCPartnerLogos/Addictlab-700-red-png.png" class="logos" style="">
 <!--    <img src="img/GCCPartnerLogos/GCCWebsitePartnerLogos.png" class="logos" style="">-->
+  </div>
 </div>
 
 <!-- GET INVOLVED Section -->
 <div class="w3-container w3-center w3-padding-64" style="background-color: #f4b8b7">
   <h2 id="contact" class="video_navigation"></h2>
   <img src="img/icons_website/7.png" height="150" class="w3-padding-16">
-  <h1 class="w3-center w3-padding-16 w3-med-wide"><b>GET IN TOUCH</b></h1>
+  <h1 class="w3-center w3-padding-16 w3-med-wide all_caps">
+    <b class="en">GET IN TOUCH</b>
+    <b class="de">GET IN TOUCH</b>
+    <b class="fr">GET IN TOUCH</b>
+    <b class="it">Contattaci</b>
+  </h1>
   <h3 class="w3-center fa fa-envelope w3-xlarge w3-padding-16"><span style="font-family: Raleway">  Email</span></h3>
   <br>
   <a class="w3-hover-opacity w3-center w3-xlarge"
@@ -541,5 +696,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -38,6 +38,9 @@ body, html, a, p {
 .it {
   display: none;
 }
+.all_caps{
+  text-transform: uppercase;
+}
 
 /* COLORS */
 a:link, a:visited {

@@ -23,8 +23,8 @@
               DE</button>
             <button onclick="toggleLanguage('.fr'); swap('FR')" class="w3-bar-item w3-button" id="FR">
               FR</button>
-<!--            <button onclick="toggleLanguage('.it'); swap('IT')" class="w3-bar-item w3-button" id="IT">-->
-<!--              IT</button>-->
+            <button onclick="toggleLanguage('.it'); swap('IT')" class="w3-bar-item w3-button" id="IT">
+              IT</button>
           </div>
         </div>
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-xlarge"
@@ -35,39 +35,97 @@
       </div>
       <div class="w3-bar w3-white" style="display:flex; flex:1;
         justify-content: flex-end; overflow: visible;">
-        <a href="../../index.html" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-home"></i> HOME </a>
-        <a href="../aboutus" class="w3-bar-item w3-button w3-hide-small" >
-          <i class="fa fa-user"></i> ABOUT </a>
-        <a href="../../index.html#newsfeed" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-newspaper-o"></i> NEWSFEED </a>
+        <a href="../../index.html" class="w3-bar-item w3-button w3-hide-small all_caps">
+          <i class="fa fa-home"></i>
+          <span class=""> HOME </span>
+        </a>
+        <a href="../aboutus" class="w3-bar-item w3-button w3-hide-small all_caps" >
+          <span class="en"><i class="fa fa-user"></i> ABOUT </span>
+          <span class="de"><i class="fa fa-user"></i> ABOUT </span>
+          <span class="fr"><i class="fa fa-user"></i> ABOUT </span>
+          <span class="it"><i class="fa fa-user"></i> Informazioni </span>
+        </a>
+        <a href="../../index.html#newsfeed" class="w3-bar-item w3-button w3-hide-small all_caps">
+          <span class="en"><i class="fa fa-newspaper-o"></i> NEWSFEED </span>
+          <span class="de "><i class="fa fa-newspaper-o"></i> NEWSFEED</span>
+          <span class="fr "><i class="fa fa-newspaper-o"></i> NEWSFEED</span>
+          <span class="it "><i class="fa fa-newspaper-o"></i> Notizie </span>
+        </a>
         <div class="w3-dropdown-hover">
-          <a href="../joinus" class="w3-bar-item w3-button w3-hide-small">
-            <i class="fa fa-th"></i> JOIN US
+          <a href="../joinus" class="w3-bar-item w3-button w3-hide-small all_caps">
+            <span class="en"><i class="fa fa-th"></i> JOIN US </span>
+            <span class="de"><i class="fa fa-th"></i> JOIN US </span>
+            <span class="fr"><i class="fa fa-th"></i> JOIN US </span>
+            <span class="it"><i class="fa fa-th"></i> Unisciti a noi </span>
           </a>
-          <div class="w3-dropdown-content w3-bar-block w3-border" style="position: absolute;
+          <div class="w3-dropdown-content w3-bar-block w3-border all_caps" style="position: absolute;
             top: 72px;">
-            <a href="../discoverylab" class="w3-bar-item w3-button">Discovery Lab</a>
-            <a href="../techlab" class="w3-bar-item w3-button">Tech Lab</a>
-            <a href="../impactlab" class="w3-bar-item w3-button">Impact Lab</a>
+            <a href="../discoverylab" class="w3-bar-item w3-button">
+              <span class="en">Discovery Lab</span>
+              <span class="de">Discovery Lab</span>
+              <span class="fr">Discovery Lab</span>
+              <span class="it">Laboratorio di Scoperta</span>
+            </a>
+            <a href="../techlab" class="w3-bar-item w3-button all_caps">
+              <span class="en">Tech Lab</span>
+              <span class="de">Tech Lab</span>
+              <span class="fr">Tech Lab</span>
+              <span class="it">Laboratorio di Tecnologia</span>
+            </a>
+            <a href="../impactlab" class="w3-bar-item w3-button all_caps">
+              <span class="en">Impact Lab</span>
+              <span class="de">Impact Lab</span>
+              <span class="fr">Impact Lab</span>
+              <span class="it">Laboratorio di Impatto</span>
+
+            </a>
           </div>
         </div>
-        <a href="../supportus" class="w3-bar-item w3-button w3-hide-small">
-          <i class="fa fa-globe"></i> SUPPORT US </a>
-        <a href="../../index.html#contact" class="w3-bar-item w3-button w3-hide-small" style="justify-content: flex-end">
-          <i class="fa fa-envelope"></i> CONTACT </a>
+        <a href="../supportus" class="w3-bar-item w3-button w3-hide-small all_caps">
+          <span class="en"><i class="fa fa-globe"></i> SUPPORT US </span>
+          <span class="de"><i class="fa fa-globe"></i> SUPPORT US </span>
+          <span class="fr"><i class="fa fa-globe"></i> SUPPORT US </span>
+          <span class="it"><i class="fa fa-globe"></i> Supportaci </span>
+        </a>
+        <a href="../../index.html#contact" class="w3-bar-item w3-button w3-hide-small all_caps"
+           style="justify-content: flex-end">
+          <span class="en"><i class="fa fa-envelope"></i> CONTACT</span>
+          <span class="de"><i class="fa fa-envelope"></i> CONTACT</span>
+          <span class="fr"><i class="fa fa-envelope"></i> CONTACT</span>
+          <span class="it"><i class="fa fa-envelope"></i> Contatti</span>
+        </a>
       </div>
     </div>
   </div>
   <!-- Navbar on SMALL screens -->
   <div id="navDemo" class="w3-bar-block w3-opacity w3-hide
-    w3-white w3-hide-large w3-hide-medium w3-right">
+    w3-white w3-hide-large w3-hide-medium w3-right all_caps">
     <a href="en/aboutus" class="w3-bar-item w3-button"
-       onclick="toggleFunction()"> ABOUT </a>
+       onclick="toggleFunction()">
+      <span class="en">ABOUT</span>
+      <span class="de">ABOUT</span>
+      <span class="fr">ABOUT</span>
+      <span class="it">Informazioni</span>
+    </a>
     <a href="en/joinus" class="w3-bar-item w3-button"
-       onclick="toggleFunction()"> JOIN US </a>
+       onclick="toggleFunction()">
+      <span class="en">JOIN US</span>
+      <span class="de">JOIN US</span>
+      <span class="fr">JOIN US</span>
+      <span class="it">Unisciti a noi</span>
+    </a>
     <a href="en/supportus" class="w3-bar-item w3-button"
-       onclick="toggleFunction()"> SUPPORT US </a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT </a>
+       onclick="toggleFunction()">
+      <span class="en">SUPPORT US</span>
+      <span class="de">SUPPORT US</span>
+      <span class="fr">SUPPORT US</span>
+      <span class="it">Supportaci</span>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">
+      <span class="en">CONTACT</span>
+      <span class="de">CONTACT</span>
+      <span class="fr">CONTACT</span>
+      <span class="it">Contatti</span>
+    </a>
   </div>
 </div>
