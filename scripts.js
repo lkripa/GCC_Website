@@ -19,9 +19,36 @@ function toggleFunction() {
     }
 }
 
+window.onload = function() {
+    if (localStorage["language"] === undefined){
+        localStorage["language"] = '.en';
+    }
+    let setLanguage = localStorage["language"]
+    console.log(setLanguage);
+    if (localStorage["language"]!= '.en') {
+        console.log("language selected not english");
+        let myElements = document.querySelectorAll(setLanguage);
+        for (let i = 0; i < myElements.length; i++) {
+        myElements[i].style.display="block";
+    }
+        let langArray = ['.en', '.de', '.fr', '.it'];
+        for (let j = 0; j < langArray.length; j++) {
+            if (langArray[j] != setLanguage) {
+                let myElements = document.querySelectorAll(langArray[j]);
+                for (let i = 0; i < myElements.length; i++) {
+                    myElements[i].style.display = "none";
+                }
+            }
+        }
+    }
+}
+
 // Change the language
 function toggleLanguage(language){
     console.log("Language Changed");
+    localStorage["language"] = language;
+    console.log(localStorage["language"]);
+    console.log("3");
     let myElements = document.querySelectorAll(language);
     for (let i = 0; i < myElements.length; i++) {
         myElements[i].style.display="block";
@@ -43,7 +70,7 @@ function toggleLanguage(language){
 // Change the visual language on button
 function swap(language) {
     var x = document.getElementById("languageButton");
-    var languageSelected = document.getElementById(language);
+    // var languageSelected = document.getElementById(language);
     x.textContent = language;
     console.log(x.textContent);
 }
