@@ -285,8 +285,10 @@ ol, li {
 
 .carousel__slide:nth-child(even) {
   background-color: #415164;
-  font-color: white;
+}
 
+.carousel__slide:nth-child(even) .carousel {
+  font-color: white;
 }
 
 .carousel__slide:before {
