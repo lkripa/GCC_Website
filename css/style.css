@@ -90,6 +90,12 @@ background-image: linear-gradient(to top, rgba(255,255,255,1) 40% , rgba(65, 85,
   border-width: 12px;
 }
 
+.button-blue-pink{
+  color: #f9ad9a;
+  background-color: #415164;
+  border-width: 12px;
+}
+
 /* CONTAINERS */
 .col-container {
   display: flex; /* Make the container element behave like a table */
@@ -158,7 +164,7 @@ transform: translateY(-50%);
   line-height: 1.5;
 }
 .padding-newsfeed-container{
-  padding-top: 60px;
+  padding-top: 0px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 60px;
@@ -335,7 +341,7 @@ ol, li {
 .carousel__navigation {
   position: absolute;
   right: 0;
-  top: 95%;
+  top: 97%;
   left: 0;
   text-align: center;
 }
@@ -384,7 +390,7 @@ ol, li {
 .responsive-youtube {
   overflow:hidden;
   /*padding-bottom:56.25%;*/
-  padding-bottom: 50% ;
+  padding-bottom: 42% ;
   position: relative;
   height:0;}
 
@@ -455,7 +461,9 @@ ol, li {
   grid-gap: 2rem;
   padding: 30px;
   }
-
+  .responsive-youtube {
+    padding-bottom: 56.25%;
+  }
   .responsive-youtube iframe {
     left:0;
     height:100%;
