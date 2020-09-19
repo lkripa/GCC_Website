@@ -245,7 +245,7 @@ ol, li {
 
 .carousel {
   position: relative;
-  padding-top: 600px;
+  padding-top: 550px;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
   /*width: 100%;*/
@@ -380,6 +380,14 @@ ol, li {
   background-color: rgba(255, 255, 255, .1);
 }
 
+ /*YOUTUBE*/
+.responsive-youtube {
+  overflow:hidden;
+  /*padding-bottom:56.25%;*/
+  padding-bottom: 50% ;
+  position: relative;
+  height:0;}
+
  /* Responsive layout - when the screen is less than 600px wide,
  make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
@@ -424,8 +432,8 @@ ol, li {
   /*padding-bottom: 60px;*/
   }
   .padding-newsfeed-videos{
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-bottom: 0px;
     padding-top: 0px;
   }
@@ -446,6 +454,13 @@ ol, li {
   grid-template-rows: 125px 125px 125px;
   grid-gap: 2rem;
   padding: 30px;
+  }
+
+  .responsive-youtube iframe {
+    left:0;
+    height:100%;
+    width:100%;
+    position:absolute;
   }
 
 /* end of mobile */
