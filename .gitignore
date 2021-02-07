@@ -11,6 +11,9 @@ firebase-debug.*.log*
 #vscode
 .vscode
 
+#os
+.DS_Store
+
 # Firebase cache
 .firebase/
 
