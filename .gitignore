@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+firebase-debug.log*
+firebase-debug.*.log*
+
+#pycharm
+.idea
+
+#vscode
+.vscode
+
+# Firebase cache
+.firebase/
+
+# Firebase config
+.firebaserc
+firebase.json
+
+
